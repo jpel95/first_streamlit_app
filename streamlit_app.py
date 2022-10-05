@@ -1,2 +1,2 @@
 import streamlit
-streamlit.title 'My first PYthon exercise'
+streamlit.title {'My first PYthon exercise'}
