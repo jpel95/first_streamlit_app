@@ -13,7 +13,7 @@ import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
-# Let's put a pick list here so they can pick the fruit they want to include 
+# Let's put a pick list here so they can pick the frut they want to include 
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
@@ -49,5 +49,5 @@ fruit_choice_2 = streamlit.text_input('What fruit do you like to add?','Jackfrui
 streamlit.write('Thanks for adding ', fruit_choice_2)
 
 #This will not correctly, but just go with it for now
-My.cur.execute("insert into fruit_load_list values (‘from streamlist’)")
+My.cur.execute("insert into fruit_load_list values ('from streamlist')")
 
